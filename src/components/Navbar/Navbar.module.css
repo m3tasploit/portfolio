@@ -1,0 +1,48 @@
+nav {
+  width: 100vw;
+  padding: 0rem clamp(2rem, 8vw, 10rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+nav a:active {
+  background: #edfffc;
+}
+nav a:hover {
+  /* background: #edfffc; */
+  background: #e5e5e5;
+}
+
+.hero {
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* color: #00715E; */
+}
+
+.active {
+  background: #edfffc;
+  /* background: #e5e5e5; */
+}
+
+@media only screen and (max-width: 930px) {
+  nav ul {
+    display: none;
+  }
+}

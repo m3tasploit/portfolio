@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.header {
+  line-height: 5rem;
+  font-size: 2.5rem;
+}
+
+.header span {
+  display: inline-block;
+}
+
+.green {
+  color: #00715e;
+}

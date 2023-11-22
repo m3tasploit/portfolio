@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.header {
+  line-height: 4.5rem;
+  font-size: 2rem;
+  word-wrap: none;
+  z-index: 1;
+}
+
+.container h1 span {
+  display: inline-block;
+}
+
+.green {
+  color: #00715e;
+}
+
+.subhead {
+  font-size: 1.7rem;
+  font-weight: 550;
+}
+
+.techs {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  max-height: 400px;
+  max-width: 400px;
+  min-height: 300px;
+  min-width: 300px;
+  gap: 10px 10px;
+  justify-self: end;
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 930px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 0rem;
+  }
+  .techs {
+    margin-top: 1rem;
+    justify-self: center;
+  }
+  .header{
+    justify-self: center;
+    word-wrap: break-word;
+  }
+}

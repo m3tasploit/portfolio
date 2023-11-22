@@ -1,0 +1,60 @@
+.container {
+  width: 100%;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.header {
+  line-height: 4rem;
+  font-size: 2.5rem;
+}
+
+.subhead {
+  font-size: 1.7rem;
+  font-weight: 550;
+  margin-top: 1rem;
+  width: 40%;
+  line-height: 2.8rem;
+}
+
+.header span {
+  display: inline-block;
+}
+
+.green {
+  color: #00715e;
+}
+
+.right {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.social {
+  display: grid;
+  width: 35%;
+  max-height: 10rem;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.social a svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 930px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 0rem;
+    gap: 2rem;
+  }
+  .subhead {
+    width: unset;
+  }
+}
